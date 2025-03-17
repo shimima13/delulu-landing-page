@@ -57,7 +57,7 @@ jobs:
 
     - name: Update Image Tag in GitOps Repo
       run: |
-        yq e '.image.tag = "${{ github.sha }}"' -i configs/prod/web-landing/values.yaml
+        yq e '.image.tag = "${{ github.sha }}"' -i configs/prod/landing/values.yaml
 
     - name: Create Pull Request
       id: cpr
@@ -65,8 +65,8 @@ jobs:
       with:
         token: ${{ steps.app-token.outputs.token }}
         add-paths: |
-          configs/prod/web-landing/values.yaml
-        title: "[prod]web-landing release with tag ${{ github.sha }}"
+          configs/prod/landing/values.yaml
+        title: "[prod]landing-page release with tag ${{ github.sha }}"
         body: |
           This PR is automatically created by landindg-page CICD workflow.
           Please merge this PR to deploy landing-page to production.
