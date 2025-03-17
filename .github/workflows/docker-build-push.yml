@@ -1,0 +1,75 @@
+name: Build and Push Docker Image
+
+on:
+  workflow_dispatch:
+
+permissions:
+  pull-requests: read
+  contents: write
+  issues: write
+
+jobs:
+  CICD:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        role-to-assume: ${{ secrets.AWS_ASSUMED_ROLE_CI_PROD }}
+        aws-region: ap-northeast-1
+
+    - name: Login to Amazon ECR
+      id: login-ecr
+      uses: aws-actions/amazon-ecr-login@v2
+      with:
+        mask-password: "true"
+
+    - name: Build, and push image to Amazon ECR
+      uses: docker/build-push-action@v6
+      with:
+        context: .
+        push: true
+        tags: 746669234290.dkr.ecr.ap-northeast-1.amazonaws.com/theta-landing:${{ github.sha }}
+
+    - uses: actions/create-github-app-token@v1
+      id: app-token
+      with:
+        app-id: ${{ secrets.GH_APP_APP_ID }}
+        private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
+        owner: ${{ github.repository_owner }}
+        repositories: |
+          gitops
+
+    - name: Checkout GitOps Repo
+      uses: actions/checkout@v4
+      with:
+        token: ${{ steps.app-token.outputs.token }}
+        repository: thetafunction/gitops
+        ref: main
+        fetch-depth: 0
+
+    - name: Update Image Tag in GitOps Repo
+      run: |
+        yq e '.image.tag = "${{ github.sha }}"' -i configs/prod/web-landing/values.yaml
+
+    - name: Create Pull Request
+      id: cpr
+      uses: peter-evans/create-pull-request@v4
+      with:
+        token: ${{ steps.app-token.outputs.token }}
+        add-paths: |
+          configs/prod/web-landing/values.yaml
+        title: "[prod]web-landing release with tag ${{ github.sha }}"
+        body: |
+          This PR is automatically created by landindg-page CICD workflow.
+          Please merge this PR to deploy landing-page to production.
+        labels: |
+          landing-page
+          prod
+        branch-suffix: short-commit-hash
