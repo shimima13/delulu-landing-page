@@ -97,10 +97,10 @@
                             </span>
                             <div class="ld-module-dropdown left collapse absolute" id="dropdown-download" aria-expanded="false" role="menuitem">
                                 <div class="ld-dropdown-menu-content">
-                                    <ul class="text-14 link-black">
-                                        <li><a href="index.html">EN</a></li>
-                                        <li><a href="cn-tr/index.html">中文</a></li>
-                                        <li><a href="kr/index.html">한국어</a></li>
+                                    <ul class="text-14 link-black language-switcher">
+                                        <li><a href="#" data-lang="en">EN</a></li>
+                                        <li><a href="#" data-lang="zh">中文</a></li>
+                                        <li><a href="#" data-lang="ko">한국어</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -207,7 +207,7 @@
                                 </h1>
                             </div>
                             <div class="ld-fancy-heading relative text-center max-w-full animation-element">
-                                <p class="ld-fh-element relative mb-0/5em leading-1/3em"><span class="text-white font-bold">Best On-Chain Trading Platform /</span> Be First to Discover Opportunities / Fastest Speeds / Multiple Layers of Security.</p>
+                                <p data-i18n="textcontent02" class="ld-fh-element relative mb-0/5em leading-1/3em">Best On-Chain Trading Platform / Be First to Discover Opportunities / Fastest Speeds / Multiple Layers of Security.</p>
                             </div>
                             <div class="w-full flex flex-wrap gap-20 px-30 py-30 items-start justify-center sm:w-full">
                                 <!-- <div class="ld-fancy-heading relative w-full max-w-full text-center animation-element">
@@ -1453,6 +1453,58 @@
         <script src="assets/js/liquid-gdpr.min.js"></script>
         <script src="assets/js/theme.min.js"></script>
         <script src="assets/js/liquid-ajax-contact-form.min.js"></script>
+
+
+        <!-- <script>
+          async function loadLanguage(lang) {
+            const res = await fetch(`/lang/lang-${lang}.json`);
+            const translations = await res.json();
+
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+              const key = el.getAttribute('data-i18n');
+              el.textContent = translations[key] || key;
+            });
+
+            localStorage.setItem('language', lang);
+          }
+
+          const savedLang = localStorage.getItem('language') || 'en';
+          loadLanguage(savedLang);
+        </script>
+ -->
+
+        <script>
+          async function loadLanguage(lang) {
+          try {
+            const response = await fetch(`/lang/lang-${lang}.json?v=${Date.now()}`);
+            const translations = await response.json();
+
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+              const key = el.getAttribute('data-i18n');
+              if (translations[key]) {
+                el.textContent = translations[key];
+              }
+            });
+
+            localStorage.setItem('language', lang);
+          } catch (error) {
+            console.error(`語言加載失敗: ${lang}`, error);
+          }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+          const savedLang = localStorage.getItem('language') || 'en';
+          loadLanguage(savedLang);
+
+          document.querySelectorAll('.language-switcher a').forEach(link => {
+            link.addEventListener('click', (e) => {
+              e.preventDefault(); 
+              const lang = link.getAttribute('data-lang');
+              loadLanguage(lang);
+            });
+          });
+        });
+        </script>
 
 
         <div class="lqd-cc lqd-cc--inner fixed pointer-events-none"></div>
