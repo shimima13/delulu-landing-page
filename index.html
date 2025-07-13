@@ -23,9 +23,25 @@
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/ico" href="assets/images/favicon.png" sizes="48x48" />
-        <title>DELULU</title>
+        <link rel="icon" type="image/ico" href="assets/images/logo/favicon1.ico" sizes="48x48" />
+        <title>DELUTHIUM</title>
     </head>
+    <style>
+        .tooltip { 
+            display: none;
+        }
+        .tooltip-box:hover .tooltip {
+            display: block;
+        }
+    </style>
+    <script>
+        setTimeout(function() {
+            document.querySelector('.tooltip-box1').classList.add('tooltip-box');
+        }, 4250);
+        setTimeout(function() {
+            document.querySelector('.tooltip-box2').classList.add('tooltip-box');
+        }, 5000);
+    </script>
     <body
         style="overflow: hidden;"
         class="lqd-preloader-activated lqd-sticky-footer-shadow-1 lqd-preloader-style-dissolve lqd-cc-outer-hidden"
@@ -77,7 +93,7 @@
                     <div class="w-25percent static flex flex-col items-start pointer-events-auto p-10">
                         <div class="module-logo flex navbar-brand-plain py-30" id="size-logo">
                             <a class="navbar-brand flex p-0 relative" href="#" rel="home">
-                                <span class="navbar-brand-inner post-rel"><img src="assets/images/logo/logo-delulu-main.svg" width="146px" alt="DELULU" /></span>
+                                <span class="navbar-brand-inner post-rel"><img src="assets/images/logo/logo-delulu-main-3.png" width="146px" alt="DELULU" /></span>
                             </a>
                         </div>
                     </div>
@@ -106,13 +122,38 @@
                                 </div>
                             </div>
                         </div> -->
-                        <div class="max-w-full">
+                        <div class="tooltip-box max-w-full flex justify-center">
                             <a
                                 href="https://delulux.xyz/trending"
                                 class="btn btn-solid btn-sm btn-hover-txt-switch-change btn-hover-txt-switch btn-hover-txt-switch-y btn-icon-shaped tracking-0/1em text-13 text-black leading-2/5em font-bold bg-primary border-2 border-white-10 rounded-6 text-black"
                             >
+                                <svg viewBox="0 0 100 82" fill="none" xmlns="http://www.w3.org/2000/svg" width="22" height="18" class="mr-0/85em">
+                                    <path d="M58.4573 1.95457L52.1425 1.90032C43.676 1.82759 35.4396 4.59586 28.7449 9.76438L24.9827 12.6689C17.8158 18.202 12.8726 26.1321 11.0483 35.0233L8.69832 46.4764C8.26595 48.5836 7.12462 50.4755 5.465 51.8359L4.52365 52.6075C2.60416 54.181 1.63514 56.6394 1.96092 59.1093C2.33587 61.952 4.35515 64.3083 7.10351 65.1103L11.6378 66.4334C13.4665 66.9671 15.1729 67.8584 16.6584 69.0558L18.3891 70.451C20.5454 72.1892 22.9681 73.5654 25.5622 74.5256L33.2392 77.367C40.2621 79.9663 47.8867 80.4305 55.155 78.7011L62.1658 77.0329C69.1992 75.3594 75.6005 71.7028 80.6145 66.4944L83.4979 63.4992C88.9816 57.8029 92.5438 50.5233 93.6858 42.6798L95.0292 33.4524C95.2133 32.1877 95.6742 30.9806 96.379 29.9174C98.4982 26.7206 98.8458 23.3432 96.379 20.3888L95.6597 19.5274C94.4286 18.053 92.7751 16.9933 90.9248 16.493C89.825 16.1957 88.2019 14.8545 87.2795 14.1828L80.4987 9.2448C74.0816 4.57176 66.3744 2.02259 58.4573 1.95457Z" fill="#CCFF00"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M27.5846 8.26124C34.6165 2.8324 43.2673 -0.0749195 52.1588 0.00146769L58.4736 0.055718C66.788 0.127147 74.8801 2.80417 81.6164 7.70973L88.3973 12.6477C88.6154 12.8065 88.8231 12.9637 89.0333 13.1228C89.3703 13.3779 89.7139 13.638 90.1173 13.9175C90.7782 14.3756 91.2198 14.6057 91.4205 14.6599C93.6479 15.2622 95.6369 16.5373 97.1172 18.3103L97.8365 19.1717C99.3474 20.9811 100.054 23.009 99.9968 25.1132C99.9412 27.1777 99.1572 29.1628 97.9617 30.9664C97.412 31.7956 97.052 32.7378 96.9082 33.7257L95.5647 42.9532C94.3658 51.1883 90.6254 58.833 84.8658 64.8159L81.9824 67.8111C76.7161 73.2815 69.9926 77.1222 62.6053 78.8799L55.5946 80.5481C47.9606 82.3645 39.9538 81.8767 32.5801 79.1475L24.9032 76.3061C22.116 75.2745 19.5135 73.7961 17.1975 71.9291L15.4667 70.5339C14.176 69.4934 12.6938 68.7193 11.106 68.256L6.57165 66.9329C3.09945 65.9196 0.551662 62.9447 0.0784971 59.3574C-0.332772 56.2394 0.890213 53.1306 3.31997 51.1389L4.26132 50.3673C5.58306 49.2838 6.49332 47.7761 6.83834 46.0946L9.1883 34.6415C11.1038 25.306 16.2945 16.9775 23.8224 11.1657L27.5846 8.26124ZM52.1262 3.79884C44.0846 3.72975 36.2628 6.35898 29.9052 11.2672L26.1431 14.1717C19.3371 19.4261 14.6415 26.9579 12.9083 35.4048L10.5583 46.8579C10.0386 49.3908 8.66623 51.6668 6.66874 53.3042L5.72738 54.0758C4.31815 55.231 3.6031 57.0391 3.8434 58.8608C4.12013 60.9589 5.61089 62.6966 7.63542 63.2874L12.1697 64.6105C14.2393 65.2144 16.1699 66.223 17.8501 67.5774L19.5808 68.9726C21.5773 70.582 23.8201 71.8559 26.2213 72.7447L33.8983 75.5861C40.5705 78.0556 47.8128 78.4961 54.7155 76.8537L61.7263 75.1856C68.4059 73.5963 74.4849 70.1237 79.2466 65.1774L82.13 62.1822C87.3378 56.7725 90.7219 49.858 91.8068 42.406L93.1503 33.1786C93.3747 31.6373 93.9366 30.1653 94.7964 28.8682C95.72 27.475 96.1694 26.1729 96.2007 25.0109C96.2309 23.8887 95.8776 22.7506 94.9216 21.6056L94.2023 20.7442C93.2204 19.5683 91.9025 18.7241 90.4293 18.3258C89.5301 18.0827 88.6103 17.4935 87.9541 17.0387C87.5055 16.7278 87.005 16.3504 86.6185 16.0589C86.4344 15.9201 86.2762 15.8008 86.1618 15.7175L79.3809 10.7795C73.2832 6.33902 65.9609 3.91769 58.441 3.85309L52.1262 3.79884Z" fill="#133000"/>
+                                    <path d="M93.4909 23.0947C93.4909 35.1542 83.7998 44.9304 71.8451 44.9304C59.8905 44.9304 50.1993 35.1542 50.1993 23.0947C50.1993 11.0352 59.8905 1.25903 71.8451 1.25903C83.7998 1.25903 93.4909 11.0352 93.4909 23.0947Z" fill="#CCFF00"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M71.8451 41.1332C81.6715 41.1332 89.6937 33.0884 89.6937 23.0947C89.6937 13.101 81.6715 5.05623 71.8451 5.05623C62.0188 5.05623 53.9965 13.101 53.9965 23.0947C53.9965 33.0884 62.0188 41.1332 71.8451 41.1332ZM71.8451 44.9304C83.7998 44.9304 93.4909 35.1542 93.4909 23.0947C93.4909 11.0352 83.7998 1.25903 71.8451 1.25903C59.8905 1.25903 50.1993 11.0352 50.1993 23.0947C50.1993 35.1542 59.8905 44.9304 71.8451 44.9304Z" fill="#133000"/>
+                                    <path d="M51.149 23.0947C51.149 35.1542 41.5003 44.9304 29.5981 44.9304C17.6959 44.9304 8.04724 35.1542 8.04724 23.0947C8.04724 11.0352 17.6959 1.25903 29.5981 1.25903C41.5003 1.25903 51.149 11.0352 51.149 23.0947Z" fill="#CCFF00"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M29.5981 41.1332C39.3563 41.1332 47.3518 33.1042 47.3518 23.0947C47.3518 13.0852 39.3563 5.05623 29.5981 5.05623C19.8399 5.05623 11.8444 13.0852 11.8444 23.0947C11.8444 33.1042 19.8399 41.1332 29.5981 41.1332ZM29.5981 44.9304C41.5003 44.9304 51.149 35.1542 51.149 23.0947C51.149 11.0352 41.5003 1.25903 29.5981 1.25903C17.6959 1.25903 8.04724 11.0352 8.04724 23.0947C8.04724 35.1542 17.6959 44.9304 29.5981 44.9304Z" fill="#133000"/>
+                                    <path d="M51.149 23.0973C51.149 31.067 41.5003 37.5278 29.5981 37.5278C17.6959 37.5278 8.04724 31.067 8.04724 23.0973C8.04724 15.1275 17.6959 8.66675 29.5981 8.66675C41.5003 8.66675 51.149 15.1275 51.149 23.0973Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M43.3578 31.0924C46.781 28.8003 48.4907 25.9223 48.4907 23.0973C48.4907 20.2723 46.781 17.3943 43.3578 15.1022C39.9522 12.8217 35.0952 11.325 29.5981 11.325C24.101 11.325 19.244 12.8217 15.8384 15.1022C12.4152 17.3943 10.7055 20.2723 10.7055 23.0973C10.7055 25.9223 12.4152 28.8003 15.8384 31.0924C19.244 33.3728 24.101 34.8696 29.5981 34.8696C35.0952 34.8696 39.9522 33.3728 43.3578 31.0924ZM29.5981 37.5278C41.5003 37.5278 51.149 31.067 51.149 23.0973C51.149 15.1275 41.5003 8.66675 29.5981 8.66675C17.6959 8.66675 8.04724 15.1275 8.04724 23.0973C8.04724 31.067 17.6959 37.5278 29.5981 37.5278Z" fill="#133000"/>
+                                    <path d="M93.4909 23.0973C93.4909 31.067 83.7998 37.5278 71.8451 37.5278C59.8905 37.5278 50.1993 31.067 50.1993 23.0973C50.1993 15.1275 59.8905 8.66675 71.8451 8.66675C83.7998 8.66675 93.4909 15.1275 93.4909 23.0973Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M85.6765 31.0894C89.1184 28.7948 90.8327 25.9168 90.8327 23.0973C90.8327 20.2777 89.1184 17.3997 85.6765 15.1052C82.2532 12.823 77.3709 11.325 71.8451 11.325C66.3194 11.325 61.4371 12.823 58.0138 15.1052C54.5719 17.3997 52.8576 20.2777 52.8576 23.0973C52.8576 25.9168 54.5719 28.7948 58.0138 31.0894C61.4371 33.3716 66.3194 34.8696 71.8451 34.8696C77.3709 34.8696 82.2532 33.3716 85.6765 31.0894ZM71.8451 37.5278C83.7998 37.5278 93.4909 31.067 93.4909 23.0973C93.4909 15.1275 83.7998 8.66675 71.8451 8.66675C59.8905 8.66675 50.1993 15.1275 50.1993 23.0973C50.1993 31.067 59.8905 37.5278 71.8451 37.5278Z" fill="#133000"/>
+                                    <path d="M82.8579 20.2474C82.8579 26.3296 77.9274 31.2602 71.8452 31.2602C65.763 31.2602 60.8324 26.3296 60.8324 20.2474C60.8324 14.1652 65.763 9.23462 71.8452 9.23462C77.9274 9.23462 82.8579 14.1652 82.8579 20.2474Z" fill="#133000"/>
+                                    <path d="M40.516 19.7745C40.516 25.9091 35.6279 30.8822 29.5981 30.8822C23.5684 30.8822 18.6803 25.9091 18.6803 19.7745C18.6803 13.6398 23.5684 8.66675 29.5981 8.66675C35.6279 8.66675 40.516 13.6398 40.516 19.7745Z" fill="#133000"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M83.7162 46.5542C84.4948 47.2566 84.5566 48.4572 83.8541 49.2359C74.4355 59.6757 65.4036 67.272 53.3891 70.5935C41.4014 73.9076 26.7474 72.8845 6.22849 66.7996C5.22312 66.5015 4.64979 65.4448 4.94794 64.4394C5.24608 63.434 6.30279 62.8607 7.30817 63.1588C27.5323 69.1563 41.3806 69.9734 52.3772 66.9333C63.3471 63.9005 71.7817 56.948 81.0345 46.6921C81.737 45.9134 82.9376 45.8517 83.7162 46.5542Z" fill="#133000"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M71.095 12.9794C71.1771 12.3027 71.7921 11.8206 72.4688 11.9026C74.2145 12.1143 75.9734 12.725 77.4101 14.0291C78.8556 15.3411 79.865 17.2553 80.2798 19.8684C80.3866 20.5416 79.9275 21.174 79.2543 21.2808C78.5811 21.3877 77.9488 20.9286 77.8419 20.2554C77.4972 18.0836 76.7028 16.7206 75.7511 15.8568C74.7906 14.9851 73.5589 14.5212 72.1717 14.3531C71.4951 14.2711 71.013 13.656 71.095 12.9794Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M29.0369 12.9794C29.1189 12.3027 29.7339 11.8206 30.4106 11.9026C32.1563 12.1143 33.9152 12.725 35.3519 14.0291C36.7974 15.3411 37.8068 17.2553 38.2216 19.8684C38.3285 20.5416 37.8693 21.174 37.1961 21.2808C36.5229 21.3877 35.8906 20.9286 35.7837 20.2554C35.439 18.0836 34.6446 16.7206 33.6929 15.8568C32.7325 14.9851 31.5008 14.5212 30.1136 14.3531C29.4369 14.2711 28.9548 13.656 29.0369 12.9794Z" fill="white"/>
+                                    <path d="M87.5721 43.6176C87.5721 44.2354 87.0713 44.7362 86.4535 44.7362C85.8358 44.7362 85.335 44.2354 85.335 43.6176C85.335 42.9998 85.8358 42.499 86.4535 42.499C87.0713 42.499 87.5721 42.9998 87.5721 43.6176Z" fill="#133000"/>
+                                    <path d="M90.4963 40.9982C90.4963 41.616 89.9955 42.1168 89.3778 42.1168C88.76 42.1168 88.2592 41.616 88.2592 40.9982C88.2592 40.3804 88.76 39.8796 89.3778 39.8796C89.9955 39.8796 90.4963 40.3804 90.4963 40.9982Z" fill="#133000"/>
+                                    <path d="M16.7326 45.2558C16.7326 45.8735 16.2318 46.3743 15.614 46.3743C14.9963 46.3743 14.4955 45.8735 14.4955 45.2558C14.4955 44.638 14.9963 44.1372 15.614 44.1372C16.2318 44.1372 16.7326 44.638 16.7326 45.2558Z" fill="#133000"/>
+                                    <path d="M20.1044 47.4931C20.1044 48.1108 19.6036 48.6116 18.9858 48.6116C18.368 48.6116 17.8672 48.1108 17.8672 47.4931C17.8672 46.8753 18.368 46.3745 18.9858 46.3745C19.6036 46.3745 20.1044 46.8753 20.1044 47.4931Z" fill="#133000"/>
+                                </svg>
                                 <span data-text="Classic Trading" class="btn-txt uppercase">Classic Trading</span>
                             </a>
+                            <div class="tooltip" style="border-radius: 8px; position:absolute; bottom: -90px; max-width: 296px; line-height: 18px; background:#ccc;color:#000;font-size:14px;font-family: Arial, Helvetica, sans-serif;font-weight: 400;padding:8px 12px 8px 12px">
+                                <div style="font-size:18px;font-weight: bold;margin-bottom:6px;text-align:center;">Delulu</div>
+                                Delulu is the 1st trading platform powered by Deluthium, which delivers low latency, Cefi-level functionalities, and multi-chain supported user experience.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -134,7 +175,7 @@
                             </span>
                         </button>
                         <a class="navbar-brand flex relative" href="#">
-                            <span class="navbar-brand-inner"><img class="logo-default" src="assets/images/logo/logo-delulu-main.svg" width="152px" alt="DELULU" /></span>
+                            <span class="navbar-brand-inner"><img class="logo-default" src="assets/images/logo/logo-delulu-main-3.png" width="152px" alt="DELULU" /></span>
                         </a>
                     </div>
                     <div class="lqd-mobile-sec-nav w-full absolute z-10">
@@ -268,25 +309,49 @@
                                         </span>
                                     </a>
                                 </div> -->
-                                <div class="max-w-full mb-15 animation-element">
+                                <div class="tooltip-box1 max-w-full mb-15 flex justify-center animation-element">
                                     <a class="btn btn-solid btn-md uppercase circle border-thick btn-icon-left tracking-0/1em text-13 text-black leading-2/5em font-bold rounded-6 btn-border-lg" data-localscroll="true" style="background:#bbb;opacity:0.5;cursor:not-allowed;">
                                         <span class="btn-txt" data-text="Dark Pool trading" data-transition-delay="true" data-delay-options='{"elements": ".lqd-chars", "delayType": "animation", "startDelay" : 0, "delayBetween" : 32.5}' data-split-text="true" data-split-options='{"type": "chars, words"}'>Dark Pool trading</span>
                                         <span class="btn-icon text-22 mr-0/85em">
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
-                                                <path d="M186.777 26.236C119.102 46.602 64.084 96.006 36.102 160H136.072C145.725 104.105 163.576 57.438 186.777 26.236ZM160 256C160 278.549 161.406 299.857 163.752 320H348.248C350.594 299.857 352 278.549 352 256S350.594 212.143 348.248 192H163.752C161.406 212.143 160 233.451 160 256ZM343.574 160C327.324 71.955 290.203 16 256 16S184.676 71.955 168.426 160H343.574ZM475.898 160C447.916 96.006 392.898 46.602 325.223 26.236C348.424 57.438 366.275 104.105 375.928 160H475.898ZM325.223 485.764C392.898 465.398 447.916 415.994 475.898 352H375.928C366.275 407.895 348.424 454.562 325.223 485.764ZM487.105 192H380.436C382.684 212.498 384 233.842 384 256S382.684 299.502 380.436 320H487.105C492.746 299.596 496 278.199 496 256S492.746 212.404 487.105 192ZM168.426 352C184.676 440.045 221.799 496 256 496S327.324 440.045 343.574 352H168.426ZM128 256C128 233.842 129.316 212.498 131.564 192H24.895C19.254 212.404 16 233.801 16 256S19.254 299.596 24.895 320H131.564C129.316 299.502 128 278.158 128 256ZM36.102 352C64.084 415.994 119.102 465.398 186.777 485.764C163.576 454.562 145.725 407.895 136.072 352H36.102Z"/>
-                                            </svg>
+                                           <img src="/assets/images/svg.png" style="width:22px;height:22px" />
                                         </span>
                                     </a>
+                                    <div class="tooltip" style="border-radius: 8px; position:absolute; bottom: 0px; max-width: 296px; line-height: 18px; background:#ccc;color:#000;font-size:14px;font-family: Arial, Helvetica, sans-serif;font-weight: 400;padding:8px 12px 8px 12px">
+                                        <div style="font-size:18px;font-weight: bold;margin-bottom:6px;text-align:center;">Deluthium</div>
+                                        Deluthium is the 1st CeFi-level institutional trading infrastructure powered by a Reinforcement Learning ​​driven dark pool engine with on-chain verifiability.
+                                    </div>
                                 </div>
-                                <div class="max-w-full mb-15 animation-element">
+                                <div class="tooltip-box2 max-w-full mb-15 flex justify-center animation-element">
                                     <a href="https://delulux.xyz/trending" class="btn btn-solid btn-md uppercase btn-hover-txt-switch btn-hover-txt-switch-y circle bg-primary border-thick btn-icon-left tracking-0/1em text-13 text-black leading-2/5em font-bold rounded-6 btn-border-lg" data-localscroll="true">
                                         <span class="btn-txt" data-text="Classic Trading" data-transition-delay="true" data-delay-options='{"elements": ".lqd-chars", "delayType": "animation", "startDelay" : 0, "delayBetween" : 32.5}' data-split-text="true" data-split-options='{"type": "chars, words"}'>Classic Trading</span>
                                         <span class="btn-icon text-22 mr-0/85em">
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
-                                                <path d="M186.777 26.236C119.102 46.602 64.084 96.006 36.102 160H136.072C145.725 104.105 163.576 57.438 186.777 26.236ZM160 256C160 278.549 161.406 299.857 163.752 320H348.248C350.594 299.857 352 278.549 352 256S350.594 212.143 348.248 192H163.752C161.406 212.143 160 233.451 160 256ZM343.574 160C327.324 71.955 290.203 16 256 16S184.676 71.955 168.426 160H343.574ZM475.898 160C447.916 96.006 392.898 46.602 325.223 26.236C348.424 57.438 366.275 104.105 375.928 160H475.898ZM325.223 485.764C392.898 465.398 447.916 415.994 475.898 352H375.928C366.275 407.895 348.424 454.562 325.223 485.764ZM487.105 192H380.436C382.684 212.498 384 233.842 384 256S382.684 299.502 380.436 320H487.105C492.746 299.596 496 278.199 496 256S492.746 212.404 487.105 192ZM168.426 352C184.676 440.045 221.799 496 256 496S327.324 440.045 343.574 352H168.426ZM128 256C128 233.842 129.316 212.498 131.564 192H24.895C19.254 212.404 16 233.801 16 256S19.254 299.596 24.895 320H131.564C129.316 299.502 128 278.158 128 256ZM36.102 352C64.084 415.994 119.102 465.398 186.777 485.764C163.576 454.562 145.725 407.895 136.072 352H36.102Z"/>
+                                            <svg  viewBox="0 0 100 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M58.4573 1.95457L52.1425 1.90032C43.676 1.82759 35.4396 4.59586 28.7449 9.76438L24.9827 12.6689C17.8158 18.202 12.8726 26.1321 11.0483 35.0233L8.69832 46.4764C8.26595 48.5836 7.12462 50.4755 5.465 51.8359L4.52365 52.6075C2.60416 54.181 1.63514 56.6394 1.96092 59.1093C2.33587 61.952 4.35515 64.3083 7.10351 65.1103L11.6378 66.4334C13.4665 66.9671 15.1729 67.8584 16.6584 69.0558L18.3891 70.451C20.5454 72.1892 22.9681 73.5654 25.5622 74.5256L33.2392 77.367C40.2621 79.9663 47.8867 80.4305 55.155 78.7011L62.1658 77.0329C69.1992 75.3594 75.6005 71.7028 80.6145 66.4944L83.4979 63.4992C88.9816 57.8029 92.5438 50.5233 93.6858 42.6798L95.0292 33.4524C95.2133 32.1877 95.6742 30.9806 96.379 29.9174C98.4982 26.7206 98.8458 23.3432 96.379 20.3888L95.6597 19.5274C94.4286 18.053 92.7751 16.9933 90.9248 16.493C89.825 16.1957 88.2019 14.8545 87.2795 14.1828L80.4987 9.2448C74.0816 4.57176 66.3744 2.02259 58.4573 1.95457Z" fill="#CCFF00"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M27.5846 8.26124C34.6165 2.8324 43.2673 -0.0749195 52.1588 0.00146769L58.4736 0.055718C66.788 0.127147 74.8801 2.80417 81.6164 7.70973L88.3973 12.6477C88.6154 12.8065 88.8231 12.9637 89.0333 13.1228C89.3703 13.3779 89.7139 13.638 90.1173 13.9175C90.7782 14.3756 91.2198 14.6057 91.4205 14.6599C93.6479 15.2622 95.6369 16.5373 97.1172 18.3103L97.8365 19.1717C99.3474 20.9811 100.054 23.009 99.9968 25.1132C99.9412 27.1777 99.1572 29.1628 97.9617 30.9664C97.412 31.7956 97.052 32.7378 96.9082 33.7257L95.5647 42.9532C94.3658 51.1883 90.6254 58.833 84.8658 64.8159L81.9824 67.8111C76.7161 73.2815 69.9926 77.1222 62.6053 78.8799L55.5946 80.5481C47.9606 82.3645 39.9538 81.8767 32.5801 79.1475L24.9032 76.3061C22.116 75.2745 19.5135 73.7961 17.1975 71.9291L15.4667 70.5339C14.176 69.4934 12.6938 68.7193 11.106 68.256L6.57165 66.9329C3.09945 65.9196 0.551662 62.9447 0.0784971 59.3574C-0.332772 56.2394 0.890213 53.1306 3.31997 51.1389L4.26132 50.3673C5.58306 49.2838 6.49332 47.7761 6.83834 46.0946L9.1883 34.6415C11.1038 25.306 16.2945 16.9775 23.8224 11.1657L27.5846 8.26124ZM52.1262 3.79884C44.0846 3.72975 36.2628 6.35898 29.9052 11.2672L26.1431 14.1717C19.3371 19.4261 14.6415 26.9579 12.9083 35.4048L10.5583 46.8579C10.0386 49.3908 8.66623 51.6668 6.66874 53.3042L5.72738 54.0758C4.31815 55.231 3.6031 57.0391 3.8434 58.8608C4.12013 60.9589 5.61089 62.6966 7.63542 63.2874L12.1697 64.6105C14.2393 65.2144 16.1699 66.223 17.8501 67.5774L19.5808 68.9726C21.5773 70.582 23.8201 71.8559 26.2213 72.7447L33.8983 75.5861C40.5705 78.0556 47.8128 78.4961 54.7155 76.8537L61.7263 75.1856C68.4059 73.5963 74.4849 70.1237 79.2466 65.1774L82.13 62.1822C87.3378 56.7725 90.7219 49.858 91.8068 42.406L93.1503 33.1786C93.3747 31.6373 93.9366 30.1653 94.7964 28.8682C95.72 27.475 96.1694 26.1729 96.2007 25.0109C96.2309 23.8887 95.8776 22.7506 94.9216 21.6056L94.2023 20.7442C93.2204 19.5683 91.9025 18.7241 90.4293 18.3258C89.5301 18.0827 88.6103 17.4935 87.9541 17.0387C87.5055 16.7278 87.005 16.3504 86.6185 16.0589C86.4344 15.9201 86.2762 15.8008 86.1618 15.7175L79.3809 10.7795C73.2832 6.33902 65.9609 3.91769 58.441 3.85309L52.1262 3.79884Z" fill="#133000"/>
+                                                <path d="M93.4909 23.0947C93.4909 35.1542 83.7998 44.9304 71.8451 44.9304C59.8905 44.9304 50.1993 35.1542 50.1993 23.0947C50.1993 11.0352 59.8905 1.25903 71.8451 1.25903C83.7998 1.25903 93.4909 11.0352 93.4909 23.0947Z" fill="#CCFF00"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M71.8451 41.1332C81.6715 41.1332 89.6937 33.0884 89.6937 23.0947C89.6937 13.101 81.6715 5.05623 71.8451 5.05623C62.0188 5.05623 53.9965 13.101 53.9965 23.0947C53.9965 33.0884 62.0188 41.1332 71.8451 41.1332ZM71.8451 44.9304C83.7998 44.9304 93.4909 35.1542 93.4909 23.0947C93.4909 11.0352 83.7998 1.25903 71.8451 1.25903C59.8905 1.25903 50.1993 11.0352 50.1993 23.0947C50.1993 35.1542 59.8905 44.9304 71.8451 44.9304Z" fill="#133000"/>
+                                                <path d="M51.149 23.0947C51.149 35.1542 41.5003 44.9304 29.5981 44.9304C17.6959 44.9304 8.04724 35.1542 8.04724 23.0947C8.04724 11.0352 17.6959 1.25903 29.5981 1.25903C41.5003 1.25903 51.149 11.0352 51.149 23.0947Z" fill="#CCFF00"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M29.5981 41.1332C39.3563 41.1332 47.3518 33.1042 47.3518 23.0947C47.3518 13.0852 39.3563 5.05623 29.5981 5.05623C19.8399 5.05623 11.8444 13.0852 11.8444 23.0947C11.8444 33.1042 19.8399 41.1332 29.5981 41.1332ZM29.5981 44.9304C41.5003 44.9304 51.149 35.1542 51.149 23.0947C51.149 11.0352 41.5003 1.25903 29.5981 1.25903C17.6959 1.25903 8.04724 11.0352 8.04724 23.0947C8.04724 35.1542 17.6959 44.9304 29.5981 44.9304Z" fill="#133000"/>
+                                                <path d="M51.149 23.0973C51.149 31.067 41.5003 37.5278 29.5981 37.5278C17.6959 37.5278 8.04724 31.067 8.04724 23.0973C8.04724 15.1275 17.6959 8.66675 29.5981 8.66675C41.5003 8.66675 51.149 15.1275 51.149 23.0973Z" fill="white"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M43.3578 31.0924C46.781 28.8003 48.4907 25.9223 48.4907 23.0973C48.4907 20.2723 46.781 17.3943 43.3578 15.1022C39.9522 12.8217 35.0952 11.325 29.5981 11.325C24.101 11.325 19.244 12.8217 15.8384 15.1022C12.4152 17.3943 10.7055 20.2723 10.7055 23.0973C10.7055 25.9223 12.4152 28.8003 15.8384 31.0924C19.244 33.3728 24.101 34.8696 29.5981 34.8696C35.0952 34.8696 39.9522 33.3728 43.3578 31.0924ZM29.5981 37.5278C41.5003 37.5278 51.149 31.067 51.149 23.0973C51.149 15.1275 41.5003 8.66675 29.5981 8.66675C17.6959 8.66675 8.04724 15.1275 8.04724 23.0973C8.04724 31.067 17.6959 37.5278 29.5981 37.5278Z" fill="#133000"/>
+                                                <path d="M93.4909 23.0973C93.4909 31.067 83.7998 37.5278 71.8451 37.5278C59.8905 37.5278 50.1993 31.067 50.1993 23.0973C50.1993 15.1275 59.8905 8.66675 71.8451 8.66675C83.7998 8.66675 93.4909 15.1275 93.4909 23.0973Z" fill="white"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M85.6765 31.0894C89.1184 28.7948 90.8327 25.9168 90.8327 23.0973C90.8327 20.2777 89.1184 17.3997 85.6765 15.1052C82.2532 12.823 77.3709 11.325 71.8451 11.325C66.3194 11.325 61.4371 12.823 58.0138 15.1052C54.5719 17.3997 52.8576 20.2777 52.8576 23.0973C52.8576 25.9168 54.5719 28.7948 58.0138 31.0894C61.4371 33.3716 66.3194 34.8696 71.8451 34.8696C77.3709 34.8696 82.2532 33.3716 85.6765 31.0894ZM71.8451 37.5278C83.7998 37.5278 93.4909 31.067 93.4909 23.0973C93.4909 15.1275 83.7998 8.66675 71.8451 8.66675C59.8905 8.66675 50.1993 15.1275 50.1993 23.0973C50.1993 31.067 59.8905 37.5278 71.8451 37.5278Z" fill="#133000"/>
+                                                <path d="M82.8579 20.2474C82.8579 26.3296 77.9274 31.2602 71.8452 31.2602C65.763 31.2602 60.8324 26.3296 60.8324 20.2474C60.8324 14.1652 65.763 9.23462 71.8452 9.23462C77.9274 9.23462 82.8579 14.1652 82.8579 20.2474Z" fill="#133000"/>
+                                                <path d="M40.516 19.7745C40.516 25.9091 35.6279 30.8822 29.5981 30.8822C23.5684 30.8822 18.6803 25.9091 18.6803 19.7745C18.6803 13.6398 23.5684 8.66675 29.5981 8.66675C35.6279 8.66675 40.516 13.6398 40.516 19.7745Z" fill="#133000"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M83.7162 46.5542C84.4948 47.2566 84.5566 48.4572 83.8541 49.2359C74.4355 59.6757 65.4036 67.272 53.3891 70.5935C41.4014 73.9076 26.7474 72.8845 6.22849 66.7996C5.22312 66.5015 4.64979 65.4448 4.94794 64.4394C5.24608 63.434 6.30279 62.8607 7.30817 63.1588C27.5323 69.1563 41.3806 69.9734 52.3772 66.9333C63.3471 63.9005 71.7817 56.948 81.0345 46.6921C81.737 45.9134 82.9376 45.8517 83.7162 46.5542Z" fill="#133000"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M71.095 12.9794C71.1771 12.3027 71.7921 11.8206 72.4688 11.9026C74.2145 12.1143 75.9734 12.725 77.4101 14.0291C78.8556 15.3411 79.865 17.2553 80.2798 19.8684C80.3866 20.5416 79.9275 21.174 79.2543 21.2808C78.5811 21.3877 77.9488 20.9286 77.8419 20.2554C77.4972 18.0836 76.7028 16.7206 75.7511 15.8568C74.7906 14.9851 73.5589 14.5212 72.1717 14.3531C71.4951 14.2711 71.013 13.656 71.095 12.9794Z" fill="white"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M29.0369 12.9794C29.1189 12.3027 29.7339 11.8206 30.4106 11.9026C32.1563 12.1143 33.9152 12.725 35.3519 14.0291C36.7974 15.3411 37.8068 17.2553 38.2216 19.8684C38.3285 20.5416 37.8693 21.174 37.1961 21.2808C36.5229 21.3877 35.8906 20.9286 35.7837 20.2554C35.439 18.0836 34.6446 16.7206 33.6929 15.8568C32.7325 14.9851 31.5008 14.5212 30.1136 14.3531C29.4369 14.2711 28.9548 13.656 29.0369 12.9794Z" fill="white"/>
+                                                <path d="M87.5721 43.6176C87.5721 44.2354 87.0713 44.7362 86.4535 44.7362C85.8358 44.7362 85.335 44.2354 85.335 43.6176C85.335 42.9998 85.8358 42.499 86.4535 42.499C87.0713 42.499 87.5721 42.9998 87.5721 43.6176Z" fill="#133000"/>
+                                                <path d="M90.4963 40.9982C90.4963 41.616 89.9955 42.1168 89.3778 42.1168C88.76 42.1168 88.2592 41.616 88.2592 40.9982C88.2592 40.3804 88.76 39.8796 89.3778 39.8796C89.9955 39.8796 90.4963 40.3804 90.4963 40.9982Z" fill="#133000"/>
+                                                <path d="M16.7326 45.2558C16.7326 45.8735 16.2318 46.3743 15.614 46.3743C14.9963 46.3743 14.4955 45.8735 14.4955 45.2558C14.4955 44.638 14.9963 44.1372 15.614 44.1372C16.2318 44.1372 16.7326 44.638 16.7326 45.2558Z" fill="#133000"/>
+                                                <path d="M20.1044 47.4931C20.1044 48.1108 19.6036 48.6116 18.9858 48.6116C18.368 48.6116 17.8672 48.1108 17.8672 47.4931C17.8672 46.8753 18.368 46.3745 18.9858 46.3745C19.6036 46.3745 20.1044 46.8753 20.1044 47.4931Z" fill="#133000"/>
                                             </svg>
                                         </span>
                                     </a>
+                                    <div class="tooltip" style="border-radius: 8px; position:absolute; bottom: 0px; max-width: 296px; line-height: 18px; background:#ccc;color:#000;font-size:14px;font-family: Arial, Helvetica, sans-serif;font-weight: 400;padding:8px 12px 8px 12px">
+                                        <div style="font-size:18px;font-weight: bold;margin-bottom:6px;text-align:center;">Delulu</div>
+                                        Delulu is the 1st trading platform powered by Deluthium, which delivers low latency, Cefi-level functionalities, and multi-chain supported user experience.
+                                    </div>
                                 </div>
                             </div>
 
@@ -302,21 +367,21 @@
                                             <div class="carousel-item px-30">
                                                 <div class="carousel-item-inner">
                                                     <div class="carousel-item-content text-14vw uppercase tracking-0/5 text-center">
-                                                        <h3 class="m-0 text-1em whitespace-nowrap text-white-10 font-ultrabold">DELULU ///</h3>
+                                                        <h3 class="m-0 text-1em whitespace-nowrap text-white-10 font-ultrabold">NON-CUSTODIAN///</h3>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="carousel-item px-30">
                                                 <div class="carousel-item-inner">
                                                     <div class="carousel-item-content text-14vw uppercase tracking-0/5 text-center">
-                                                        <h3 class="m-0 text-1em whitespace-nowrap text-white-10 font-ultrabold">DELULU ///</h3>
+                                                        <h3 class="m-0 text-1em whitespace-nowrap text-white-10 font-ultrabold">TRANSPARENCY///</h3>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="carousel-item px-30">
                                                 <div class="carousel-item-inner">
                                                     <div class="carousel-item-content text-14vw uppercase tracking-0/5 text-center">
-                                                        <h3 class="m-0 text-1em whitespace-nowrap text-white-10 font-ultrabold">DELULU ///</h3>
+                                                        <h3 class="m-0 text-1em whitespace-nowrap text-white-10 font-ultrabold">VERIFIABILITY ///</h3>
                                                     </div>
                                                 </div>
                                             </div>
@@ -332,7 +397,7 @@
                     <section
                         id="parallax-section"
                         class="lqd-section parallax-bg w-full min-h-100vh flex flex-col items-center justify-center bg-no-repeat bg-bottom-center bg-cover p-10"
-                        style="background-image: url(assets/images/work-flow/ui-01-deluu.png);"
+                        style="background-image: url(assets/images/work-flow/ui-01-deluu-1.png);"
                         data-parallax="true"
                         data-parallax-options='{"ease": "linear", "start": "top bottom", "end": "bottom+=0px top"}'
                         data-parallax-from='{"y": "0px", "scaleX" : 0.8, "scaleY" : 0.8}'
@@ -378,7 +443,7 @@
 
                                         <h3 class="lqd-text-reveal-el mb-40 font-semibold leading-1em -tracking-1 text-white" data-split-text="true" data-split-options='{"type": "words, chars"}' data-parallax="true" data-parallax-options='{"parallaxTargets": ".lqd-chars, figure", "start": "top bottom", "end": "center 75%", "scrub" : 3}' data-parallax-from='{"opacity" :0.2}' data-parallax-to='{"opacity" :1, "stagger": {"from": "start", "each" : 1}}'>
                                             <span class="lqd-adv-txt-item">
-                                                <span>As Delulu brings CeFi and TradFi standards to on-chain trading, its core vision is to power high-throughput, low-impact execution for the next generation of decentralized markets.  Powered by a Reinforcement Learning dark pool engine, Delulu delivers CEX-level performance — zero gas, zero slippage, low latency, building the trading infra for TradFi distribution and unlocking genuine mass adoption of on-chain markets.</span>
+                                                <span>As Deluthium brings CeFi and TradFi standards to on-chain trading, its core vision is to power high-throughput, low-impact execution for the next generation of decentralized markets.  Powered by a Reinforcement Learning dark pool engine, Deluthium delivers CEX-level performance — zero gas, zero slippage, low latency, building the trading infra for TradFi distribution and unlocking genuine mass adoption of on-chain markets.</span>
                                             </span>
                                         </h3>
                                     </div>
@@ -610,7 +675,7 @@
                                                 data-parallax-from='{"opacity" : 0.2}'
                                                 data-parallax-to='{"opacity" : 1, "stagger": {"from": "start", "each" : 1}}'
                                             >
-                                                Tailor-made trading features built to keep you ahead in the fast-paced meme coin market.
+                                                Tailor-made trading features built to keep you ahead in the fast-paced on-chain market.
                                             </p>
                                         </div>
                                     </div>
@@ -686,7 +751,7 @@
                                                                     data-split-text="true"
                                                                     data-split-options='{"type":  "chars, words"}'
                                                                 >
-                                                                    Best On-Chain Trading Tool
+                                                                    Non-custodian
                                                                 </span>
                                                                 <span class="btn-icon text-1em text-primary mr-10">
                                                                     <svg xmlns="http://www.w3.org/2000/svg" width="12.885" height="12.894" viewbox="0 0 12.885 12.894">
@@ -707,7 +772,7 @@
                                                                     data-split-text="true"
                                                                     data-split-options='{"type":  "chars, words"}'
                                                                 >
-                                                                    Fastest Speeds
+                                                                    Transparency
                                                                 </span>
                                                                 <span class="btn-icon text-1em text-primary mr-10">
                                                                     <svg xmlns="http://www.w3.org/2000/svg" width="12.885" height="12.894" viewbox="0 0 12.885 12.894">
@@ -728,7 +793,7 @@
                                                                     data-split-text="true"
                                                                     data-split-options='{"type":  "chars, words"}'
                                                                 >
-                                                                    Multiple Layers of Security
+                                                                    Verifiability
                                                                 </span>
                                                                 <span class="btn-icon text-1em text-primary mr-10">
                                                                     <svg xmlns="http://www.w3.org/2000/svg" width="12.885" height="12.894" viewbox="0 0 12.885 12.894">
@@ -749,7 +814,7 @@
                                                                     data-split-text="true"
                                                                     data-split-options='{"type":  "chars, words"}'
                                                                 >
-                                                                    Best On-Chain Trading Tool
+                                                                    CeFi-level Efficiency
                                                                 </span>
                                                                 <span class="btn-icon text-1em text-primary mr-10">
                                                                     <svg xmlns="http://www.w3.org/2000/svg" width="12.885" height="12.894" viewbox="0 0 12.885 12.894">
@@ -770,7 +835,7 @@
                                                                     data-split-text="true"
                                                                     data-split-options='{"type":  "chars, words"}'
                                                                 >
-                                                                     Fastest Speeds
+                                                                    Low-latency
                                                                 </span>
                                                                 <span class="btn-icon text-1em text-primary mr-10">
                                                                     <svg xmlns="http://www.w3.org/2000/svg" width="12.885" height="12.894" viewbox="0 0 12.885 12.894">
@@ -791,7 +856,70 @@
                                                                     data-split-text="true"
                                                                     data-split-options='{"type":  "chars, words"}'
                                                                 >
-                                                                    Multiple Layers of Security
+                                                                    Low friction
+                                                                </span>
+                                                                <span class="btn-icon text-1em text-primary mr-10">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12.885" height="12.894" viewbox="0 0 12.885 12.894">
+                                                                        <path
+                                                                            d="M6.451-6.047A25.07,25.07,0,0,0,3.916-4.86,6.916,6.916,0,0,0,2.443-3.814,6.718,6.718,0,0,0,1.4-2.355,25.1,25.1,0,0,0,.193.22h-.36A26.15,26.15,0,0,0-1.38-2.355,6.924,6.924,0,0,0-2.417-3.814,6.916,6.916,0,0,0-3.889-4.86,24.748,24.748,0,0,0-6.434-6.047v-.36A24.44,24.44,0,0,0-3.88-7.594,6.687,6.687,0,0,0-2.417-8.64,6.924,6.924,0,0,0-1.38-10.1,26.15,26.15,0,0,0-.167-12.674h.36A25.1,25.1,0,0,0,1.4-10.1,6.718,6.718,0,0,0,2.443-8.64,6.468,6.468,0,0,0,3.9-7.594,24.44,24.44,0,0,0,6.451-6.407Z"
+                                                                            transform="translate(6.434 12.674)"
+                                                                            fill="currentColor"
+                                                                        ></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </a>
+                                                            <a class="btn btn-solid btn-sm btn-hover-txt-liquid-y btn-icon-left bg-white-5 shadow-sm rounded-10 text-white text-15">
+                                                                <span
+                                                                    data-text="Help me get fit"
+                                                                    class="btn-txt"
+                                                                    data-transition-delay="true"
+                                                                    data-delay-options='{"elements":  ".lqd-chars", "delayType":  "animation", "startDelay":  0, "delayBetween":  32.5}'
+                                                                    data-split-text="true"
+                                                                    data-split-options='{"type":  "chars, words"}'
+                                                                >
+                                                                    MEV-Protection
+                                                                </span>
+                                                                <span class="btn-icon text-1em text-primary mr-10">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12.885" height="12.894" viewbox="0 0 12.885 12.894">
+                                                                        <path
+                                                                            d="M6.451-6.047A25.07,25.07,0,0,0,3.916-4.86,6.916,6.916,0,0,0,2.443-3.814,6.718,6.718,0,0,0,1.4-2.355,25.1,25.1,0,0,0,.193.22h-.36A26.15,26.15,0,0,0-1.38-2.355,6.924,6.924,0,0,0-2.417-3.814,6.916,6.916,0,0,0-3.889-4.86,24.748,24.748,0,0,0-6.434-6.047v-.36A24.44,24.44,0,0,0-3.88-7.594,6.687,6.687,0,0,0-2.417-8.64,6.924,6.924,0,0,0-1.38-10.1,26.15,26.15,0,0,0-.167-12.674h.36A25.1,25.1,0,0,0,1.4-10.1,6.718,6.718,0,0,0,2.443-8.64,6.468,6.468,0,0,0,3.9-7.594,24.44,24.44,0,0,0,6.451-6.407Z"
+                                                                            transform="translate(6.434 12.674)"
+                                                                            fill="currentColor"
+                                                                        ></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </a>
+                                                            <a class="btn btn-solid btn-sm btn-hover-txt-liquid-y btn-icon-left bg-white-5 shadow-sm rounded-10 text-white text-15">
+                                                                <span
+                                                                    data-text="Help me get fit"
+                                                                    class="btn-txt"
+                                                                    data-transition-delay="true"
+                                                                    data-delay-options='{"elements":  ".lqd-chars", "delayType":  "animation", "startDelay":  0, "delayBetween":  32.5}'
+                                                                    data-split-text="true"
+                                                                    data-split-options='{"type":  "chars, words"}'
+                                                                >
+                                                                    Cross-chain Trading
+                                                                </span>
+                                                                <span class="btn-icon text-1em text-primary mr-10">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12.885" height="12.894" viewbox="0 0 12.885 12.894">
+                                                                        <path
+                                                                            d="M6.451-6.047A25.07,25.07,0,0,0,3.916-4.86,6.916,6.916,0,0,0,2.443-3.814,6.718,6.718,0,0,0,1.4-2.355,25.1,25.1,0,0,0,.193.22h-.36A26.15,26.15,0,0,0-1.38-2.355,6.924,6.924,0,0,0-2.417-3.814,6.916,6.916,0,0,0-3.889-4.86,24.748,24.748,0,0,0-6.434-6.047v-.36A24.44,24.44,0,0,0-3.88-7.594,6.687,6.687,0,0,0-2.417-8.64,6.924,6.924,0,0,0-1.38-10.1,26.15,26.15,0,0,0-.167-12.674h.36A25.1,25.1,0,0,0,1.4-10.1,6.718,6.718,0,0,0,2.443-8.64,6.468,6.468,0,0,0,3.9-7.594,24.44,24.44,0,0,0,6.451-6.407Z"
+                                                                            transform="translate(6.434 12.674)"
+                                                                            fill="currentColor"
+                                                                        ></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </a>
+                                                            <a class="btn btn-solid btn-sm btn-hover-txt-liquid-y btn-icon-left bg-white-5 shadow-sm rounded-10 text-white text-15">
+                                                                <span
+                                                                    data-text="Help me get fit"
+                                                                    class="btn-txt"
+                                                                    data-transition-delay="true"
+                                                                    data-delay-options='{"elements":  ".lqd-chars", "delayType":  "animation", "startDelay":  0, "delayBetween":  32.5}'
+                                                                    data-split-text="true"
+                                                                    data-split-options='{"type":  "chars, words"}'
+                                                                >
+                                                                    Permissionless
                                                                 </span>
                                                                 <span class="btn-icon text-1em text-primary mr-10">
                                                                     <svg xmlns="http://www.w3.org/2000/svg" width="12.885" height="12.894" viewbox="0 0 12.885 12.894">
@@ -805,7 +933,198 @@
                                                             </a>
                                                         </div>
                                                     </div>
-                                                    <div class="carousel-item flex flex-col justify-center has-one-child">
+                                                    <div class="flex flex-row gap-30 whitespace-nowrap ml-60">
+                                                            <a class="btn btn-solid btn-sm btn-hover-txt-liquid-y btn-icon-left bg-white-5 shadow-sm rounded-10 text-white text-15">
+                                                                <span
+                                                                    data-text="Help me write a story"
+                                                                    class="btn-txt"
+                                                                    data-transition-delay="true"
+                                                                    data-delay-options='{"elements":  ".lqd-chars", "delayType":  "animation", "startDelay":  0, "delayBetween":  32.5}'
+                                                                    data-split-text="true"
+                                                                    data-split-options='{"type":  "chars, words"}'
+                                                                >
+                                                                    Non-custodian
+                                                                </span>
+                                                                <span class="btn-icon text-1em text-primary mr-10">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12.885" height="12.894" viewbox="0 0 12.885 12.894">
+                                                                        <path
+                                                                            d="M6.451-6.047A25.07,25.07,0,0,0,3.916-4.86,6.916,6.916,0,0,0,2.443-3.814,6.718,6.718,0,0,0,1.4-2.355,25.1,25.1,0,0,0,.193.22h-.36A26.15,26.15,0,0,0-1.38-2.355,6.924,6.924,0,0,0-2.417-3.814,6.916,6.916,0,0,0-3.889-4.86,24.748,24.748,0,0,0-6.434-6.047v-.36A24.44,24.44,0,0,0-3.88-7.594,6.687,6.687,0,0,0-2.417-8.64,6.924,6.924,0,0,0-1.38-10.1,26.15,26.15,0,0,0-.167-12.674h.36A25.1,25.1,0,0,0,1.4-10.1,6.718,6.718,0,0,0,2.443-8.64,6.468,6.468,0,0,0,3.9-7.594,24.44,24.44,0,0,0,6.451-6.407Z"
+                                                                            transform="translate(6.434 12.674)"
+                                                                            fill="currentColor"
+                                                                        ></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </a>
+                                                            <a class="btn btn-solid btn-sm btn-hover-txt-liquid-y btn-icon-left bg-white-5 shadow-sm rounded-10 text-white text-15">
+                                                                <span
+                                                                    data-text="Help me plan my trip"
+                                                                    class="btn-txt"
+                                                                    data-transition-delay="true"
+                                                                    data-delay-options='{"elements":  ".lqd-chars", "delayType":  "animation", "startDelay":  0, "delayBetween":  32.5}'
+                                                                    data-split-text="true"
+                                                                    data-split-options='{"type":  "chars, words"}'
+                                                                >
+                                                                    Transparency
+                                                                </span>
+                                                                <span class="btn-icon text-1em text-primary mr-10">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12.885" height="12.894" viewbox="0 0 12.885 12.894">
+                                                                        <path
+                                                                            d="M6.451-6.047A25.07,25.07,0,0,0,3.916-4.86,6.916,6.916,0,0,0,2.443-3.814,6.718,6.718,0,0,0,1.4-2.355,25.1,25.1,0,0,0,.193.22h-.36A26.15,26.15,0,0,0-1.38-2.355,6.924,6.924,0,0,0-2.417-3.814,6.916,6.916,0,0,0-3.889-4.86,24.748,24.748,0,0,0-6.434-6.047v-.36A24.44,24.44,0,0,0-3.88-7.594,6.687,6.687,0,0,0-2.417-8.64,6.924,6.924,0,0,0-1.38-10.1,26.15,26.15,0,0,0-.167-12.674h.36A25.1,25.1,0,0,0,1.4-10.1,6.718,6.718,0,0,0,2.443-8.64,6.468,6.468,0,0,0,3.9-7.594,24.44,24.44,0,0,0,6.451-6.407Z"
+                                                                            transform="translate(6.434 12.674)"
+                                                                            fill="currentColor"
+                                                                        ></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </a>
+                                                            <a class="btn btn-solid btn-sm btn-hover-txt-liquid-y btn-icon-left bg-white-5 shadow-sm rounded-10 text-white text-15">
+                                                                <span
+                                                                    data-text="Help me get fit"
+                                                                    class="btn-txt"
+                                                                    data-transition-delay="true"
+                                                                    data-delay-options='{"elements":  ".lqd-chars", "delayType":  "animation", "startDelay":  0, "delayBetween":  32.5}'
+                                                                    data-split-text="true"
+                                                                    data-split-options='{"type":  "chars, words"}'
+                                                                >
+                                                                    Verifiability
+                                                                </span>
+                                                                <span class="btn-icon text-1em text-primary mr-10">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12.885" height="12.894" viewbox="0 0 12.885 12.894">
+                                                                        <path
+                                                                            d="M6.451-6.047A25.07,25.07,0,0,0,3.916-4.86,6.916,6.916,0,0,0,2.443-3.814,6.718,6.718,0,0,0,1.4-2.355,25.1,25.1,0,0,0,.193.22h-.36A26.15,26.15,0,0,0-1.38-2.355,6.924,6.924,0,0,0-2.417-3.814,6.916,6.916,0,0,0-3.889-4.86,24.748,24.748,0,0,0-6.434-6.047v-.36A24.44,24.44,0,0,0-3.88-7.594,6.687,6.687,0,0,0-2.417-8.64,6.924,6.924,0,0,0-1.38-10.1,26.15,26.15,0,0,0-.167-12.674h.36A25.1,25.1,0,0,0,1.4-10.1,6.718,6.718,0,0,0,2.443-8.64,6.468,6.468,0,0,0,3.9-7.594,24.44,24.44,0,0,0,6.451-6.407Z"
+                                                                            transform="translate(6.434 12.674)"
+                                                                            fill="currentColor"
+                                                                        ></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </a>
+                                                            <a class="btn btn-solid btn-sm btn-hover-txt-liquid-y btn-icon-left bg-white-5 shadow-sm rounded-10 text-white text-15">
+                                                                <span
+                                                                    data-text="Write a Python Script"
+                                                                    class="btn-txt"
+                                                                    data-transition-delay="true"
+                                                                    data-delay-options='{"elements":  ".lqd-chars", "delayType":  "animation", "startDelay":  0, "delayBetween":  32.5}'
+                                                                    data-split-text="true"
+                                                                    data-split-options='{"type":  "chars, words"}'
+                                                                >
+                                                                    CeFi-level Efficiency
+                                                                </span>
+                                                                <span class="btn-icon text-1em text-primary mr-10">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12.885" height="12.894" viewbox="0 0 12.885 12.894">
+                                                                        <path
+                                                                            d="M6.451-6.047A25.07,25.07,0,0,0,3.916-4.86,6.916,6.916,0,0,0,2.443-3.814,6.718,6.718,0,0,0,1.4-2.355,25.1,25.1,0,0,0,.193.22h-.36A26.15,26.15,0,0,0-1.38-2.355,6.924,6.924,0,0,0-2.417-3.814,6.916,6.916,0,0,0-3.889-4.86,24.748,24.748,0,0,0-6.434-6.047v-.36A24.44,24.44,0,0,0-3.88-7.594,6.687,6.687,0,0,0-2.417-8.64,6.924,6.924,0,0,0-1.38-10.1,26.15,26.15,0,0,0-.167-12.674h.36A25.1,25.1,0,0,0,1.4-10.1,6.718,6.718,0,0,0,2.443-8.64,6.468,6.468,0,0,0,3.9-7.594,24.44,24.44,0,0,0,6.451-6.407Z"
+                                                                            transform="translate(6.434 12.674)"
+                                                                            fill="currentColor"
+                                                                        ></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </a>
+                                                            <a class="btn btn-solid btn-sm btn-hover-txt-liquid-y btn-icon-left bg-white-5 shadow-sm rounded-10 text-white text-15">
+                                                                <span
+                                                                    data-text="Create a 3 course menu"
+                                                                    class="btn-txt"
+                                                                    data-transition-delay="true"
+                                                                    data-delay-options='{"elements":  ".lqd-chars", "delayType":  "animation", "startDelay":  0, "delayBetween":  32.5}'
+                                                                    data-split-text="true"
+                                                                    data-split-options='{"type":  "chars, words"}'
+                                                                >
+                                                                    Low-latency
+                                                                </span>
+                                                                <span class="btn-icon text-1em text-primary mr-10">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12.885" height="12.894" viewbox="0 0 12.885 12.894">
+                                                                        <path
+                                                                            d="M6.451-6.047A25.07,25.07,0,0,0,3.916-4.86,6.916,6.916,0,0,0,2.443-3.814,6.718,6.718,0,0,0,1.4-2.355,25.1,25.1,0,0,0,.193.22h-.36A26.15,26.15,0,0,0-1.38-2.355,6.924,6.924,0,0,0-2.417-3.814,6.916,6.916,0,0,0-3.889-4.86,24.748,24.748,0,0,0-6.434-6.047v-.36A24.44,24.44,0,0,0-3.88-7.594,6.687,6.687,0,0,0-2.417-8.64,6.924,6.924,0,0,0-1.38-10.1,26.15,26.15,0,0,0-.167-12.674h.36A25.1,25.1,0,0,0,1.4-10.1,6.718,6.718,0,0,0,2.443-8.64,6.468,6.468,0,0,0,3.9-7.594,24.44,24.44,0,0,0,6.451-6.407Z"
+                                                                            transform="translate(6.434 12.674)"
+                                                                            fill="currentColor"
+                                                                        ></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </a>
+                                                            <a class="btn btn-solid btn-sm btn-hover-txt-liquid-y btn-icon-left bg-white-5 shadow-sm rounded-10 text-white text-15">
+                                                                <span
+                                                                    data-text="Help me get fit"
+                                                                    class="btn-txt"
+                                                                    data-transition-delay="true"
+                                                                    data-delay-options='{"elements":  ".lqd-chars", "delayType":  "animation", "startDelay":  0, "delayBetween":  32.5}'
+                                                                    data-split-text="true"
+                                                                    data-split-options='{"type":  "chars, words"}'
+                                                                >
+                                                                    Low friction
+                                                                </span>
+                                                                <span class="btn-icon text-1em text-primary mr-10">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12.885" height="12.894" viewbox="0 0 12.885 12.894">
+                                                                        <path
+                                                                            d="M6.451-6.047A25.07,25.07,0,0,0,3.916-4.86,6.916,6.916,0,0,0,2.443-3.814,6.718,6.718,0,0,0,1.4-2.355,25.1,25.1,0,0,0,.193.22h-.36A26.15,26.15,0,0,0-1.38-2.355,6.924,6.924,0,0,0-2.417-3.814,6.916,6.916,0,0,0-3.889-4.86,24.748,24.748,0,0,0-6.434-6.047v-.36A24.44,24.44,0,0,0-3.88-7.594,6.687,6.687,0,0,0-2.417-8.64,6.924,6.924,0,0,0-1.38-10.1,26.15,26.15,0,0,0-.167-12.674h.36A25.1,25.1,0,0,0,1.4-10.1,6.718,6.718,0,0,0,2.443-8.64,6.468,6.468,0,0,0,3.9-7.594,24.44,24.44,0,0,0,6.451-6.407Z"
+                                                                            transform="translate(6.434 12.674)"
+                                                                            fill="currentColor"
+                                                                        ></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </a>
+                                                            <a class="btn btn-solid btn-sm btn-hover-txt-liquid-y btn-icon-left bg-white-5 shadow-sm rounded-10 text-white text-15">
+                                                                <span
+                                                                    data-text="Help me get fit"
+                                                                    class="btn-txt"
+                                                                    data-transition-delay="true"
+                                                                    data-delay-options='{"elements":  ".lqd-chars", "delayType":  "animation", "startDelay":  0, "delayBetween":  32.5}'
+                                                                    data-split-text="true"
+                                                                    data-split-options='{"type":  "chars, words"}'
+                                                                >
+                                                                    MEV-Protection
+                                                                </span>
+                                                                <span class="btn-icon text-1em text-primary mr-10">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12.885" height="12.894" viewbox="0 0 12.885 12.894">
+                                                                        <path
+                                                                            d="M6.451-6.047A25.07,25.07,0,0,0,3.916-4.86,6.916,6.916,0,0,0,2.443-3.814,6.718,6.718,0,0,0,1.4-2.355,25.1,25.1,0,0,0,.193.22h-.36A26.15,26.15,0,0,0-1.38-2.355,6.924,6.924,0,0,0-2.417-3.814,6.916,6.916,0,0,0-3.889-4.86,24.748,24.748,0,0,0-6.434-6.047v-.36A24.44,24.44,0,0,0-3.88-7.594,6.687,6.687,0,0,0-2.417-8.64,6.924,6.924,0,0,0-1.38-10.1,26.15,26.15,0,0,0-.167-12.674h.36A25.1,25.1,0,0,0,1.4-10.1,6.718,6.718,0,0,0,2.443-8.64,6.468,6.468,0,0,0,3.9-7.594,24.44,24.44,0,0,0,6.451-6.407Z"
+                                                                            transform="translate(6.434 12.674)"
+                                                                            fill="currentColor"
+                                                                        ></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </a>
+                                                            <a class="btn btn-solid btn-sm btn-hover-txt-liquid-y btn-icon-left bg-white-5 shadow-sm rounded-10 text-white text-15">
+                                                                <span
+                                                                    data-text="Help me get fit"
+                                                                    class="btn-txt"
+                                                                    data-transition-delay="true"
+                                                                    data-delay-options='{"elements":  ".lqd-chars", "delayType":  "animation", "startDelay":  0, "delayBetween":  32.5}'
+                                                                    data-split-text="true"
+                                                                    data-split-options='{"type":  "chars, words"}'
+                                                                >
+                                                                    Cross-chain Trading
+                                                                </span>
+                                                                <span class="btn-icon text-1em text-primary mr-10">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12.885" height="12.894" viewbox="0 0 12.885 12.894">
+                                                                        <path
+                                                                            d="M6.451-6.047A25.07,25.07,0,0,0,3.916-4.86,6.916,6.916,0,0,0,2.443-3.814,6.718,6.718,0,0,0,1.4-2.355,25.1,25.1,0,0,0,.193.22h-.36A26.15,26.15,0,0,0-1.38-2.355,6.924,6.924,0,0,0-2.417-3.814,6.916,6.916,0,0,0-3.889-4.86,24.748,24.748,0,0,0-6.434-6.047v-.36A24.44,24.44,0,0,0-3.88-7.594,6.687,6.687,0,0,0-2.417-8.64,6.924,6.924,0,0,0-1.38-10.1,26.15,26.15,0,0,0-.167-12.674h.36A25.1,25.1,0,0,0,1.4-10.1,6.718,6.718,0,0,0,2.443-8.64,6.468,6.468,0,0,0,3.9-7.594,24.44,24.44,0,0,0,6.451-6.407Z"
+                                                                            transform="translate(6.434 12.674)"
+                                                                            fill="currentColor"
+                                                                        ></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </a>
+                                                            <a class="btn btn-solid btn-sm btn-hover-txt-liquid-y btn-icon-left bg-white-5 shadow-sm rounded-10 text-white text-15">
+                                                                <span
+                                                                    data-text="Help me get fit"
+                                                                    class="btn-txt"
+                                                                    data-transition-delay="true"
+                                                                    data-delay-options='{"elements":  ".lqd-chars", "delayType":  "animation", "startDelay":  0, "delayBetween":  32.5}'
+                                                                    data-split-text="true"
+                                                                    data-split-options='{"type":  "chars, words"}'
+                                                                >
+                                                                    Permissionless
+                                                                </span>
+                                                                <span class="btn-icon text-1em text-primary mr-10">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12.885" height="12.894" viewbox="0 0 12.885 12.894">
+                                                                        <path
+                                                                            d="M6.451-6.047A25.07,25.07,0,0,0,3.916-4.86,6.916,6.916,0,0,0,2.443-3.814,6.718,6.718,0,0,0,1.4-2.355,25.1,25.1,0,0,0,.193.22h-.36A26.15,26.15,0,0,0-1.38-2.355,6.924,6.924,0,0,0-2.417-3.814,6.916,6.916,0,0,0-3.889-4.86,24.748,24.748,0,0,0-6.434-6.047v-.36A24.44,24.44,0,0,0-3.88-7.594,6.687,6.687,0,0,0-2.417-8.64,6.924,6.924,0,0,0-1.38-10.1,26.15,26.15,0,0,0-.167-12.674h.36A25.1,25.1,0,0,0,1.4-10.1,6.718,6.718,0,0,0,2.443-8.64,6.468,6.468,0,0,0,3.9-7.594,24.44,24.44,0,0,0,6.451-6.407Z"
+                                                                            transform="translate(6.434 12.674)"
+                                                                            fill="currentColor"
+                                                                        ></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                    <!-- <div class="carousel-item flex flex-col justify-center has-one-child">
                                                         <div class="flex flex-row gap-30 whitespace-nowrap">
                                                             <a class="btn btn-solid btn-sm btn-hover-txt-liquid-y btn-icon-left bg-white-5 shadow-sm rounded-10 text-white text-15">
                                                                 <span
@@ -934,7 +1253,7 @@
                                                                 </span>
                                                             </a>
                                                         </div>
-                                                    </div>
+                                                    </div> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -1083,7 +1402,7 @@
                             <div class="row">
                                 <div class="col col-12">
                                     <div class="whitespace-nowrap ld-fancy-heading relative" data-parallax="true" data-parallax-options='{"ease": "linear", "start": "top bottom", "end": "bottom+=0px top"}' data-parallax-from='{"x": "1vw"}' data-parallax-to='{"x": "-20vw"}'>
-                                        <h2 class="ld-fh-element mb-0/5em inline-block relative font-ultrabold text-white" style="font-size: 320px;">{DELULU} {DELULU}</h2>
+                                        <h2 class="ld-fh-element mb-0/5em inline-block relative font-ultrabold text-white" style="font-size: 280px;">DELUTHIUM</h2>
                                     </div>
                                 </div>
                             </div>
@@ -1156,7 +1475,7 @@
                     <div class="w-25percent flex flex-col gap-20 p-10 transition-bg module-logo lg:w-full lg:flex-row">
                         <div class="lqd-imggrp-single block relative">
                             <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
-                                <figure class="w-full relative"><img width="200" src="assets/images/logo/logo-delulu-main.svg" alt="DELULU" /></figure>
+                                <figure class="w-full relative"><img width="100" src="assets/images/logo/logo-delulu-main-3.png" alt="DELULU" /></figure>
                             </div>
                         </div>
                         <!-- <div class="max-w-full self-start">
@@ -1170,7 +1489,7 @@
                         <div class="ld-fancy-heading relative"><h6 class="ld-fh-element relative mb-0/5em text-15 font-medium">Product</h6></div>
                         <div class="lqd-fancy-menu lqd-custom-menu relative lqd-menu-td-none">
                             <ul class="reset-ul link-white-50 text-15">
-                                <li class="mb-15"><a href="https://delulux.xyz/trending">Delulu</a></li>
+                                <li class="mb-15"><a href="https://delulux.xyz/trending">Deluthium</a></li>
                                 <!-- <li class="mb-15">
                                     <a href="#">Delulu Market<span class="link-badge" style="--lqd-badge-color: #747474;">Soon</span></a>
                                 </li> -->
@@ -1216,7 +1535,7 @@
                     </div> -->
                     <div class="w-full flex justify-between items-center p-10 mt-70 mb-40 transition-bg lg:flex-wrap">
                         <div class="ld-fancy-heading relative w-25percent lg:w-full lg:text-center">
-                            <p class="ld-fh-element relative mb-0/5em text-12 leading-20 tracking-0/1 text-white-30">Copyright © 2025 Delulu. All rights reserved.</p>
+                            <p class="ld-fh-element relative mb-0/5em text-12 leading-20 tracking-0/1 text-white-30">Copyright © 2025 Deluthium. All rights reserved.</p>
                         </div>
                         <div class="lqd-fancy-menu lqd-custom-menu relative lqd-menu-td-none module-social lg:w-full lg:text-center">
                             <ul class="reset-ul inline-ul">
