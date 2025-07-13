@@ -1823,6 +1823,7 @@
         <script>
           async function loadLanguage(lang) {
           try {
+            // 加行注释
             const response = await fetch(`/lang/lang-${lang}.json?v=${Date.now()}`);
             const translations = await response.json();
 
