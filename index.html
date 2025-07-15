@@ -33,13 +33,25 @@
         .tooltip-box:hover .tooltip {
             display: block;
         }
+
+        .tooltip-box-top {
+            position: relative;
+        }
+        .tooltip-top { 
+            display: none;
+        }
+        .tooltip-box:hover .tooltip-top {
+            display: block;
+        }
     </style>
     <script>
         setTimeout(function() {
             document.querySelector('.tooltip-box1').classList.add('tooltip-box');
+            document.querySelector('.tooltip-box1').classList.add('tooltip-box-top');
         }, 4250);
         setTimeout(function() {
             document.querySelector('.tooltip-box2').classList.add('tooltip-box');
+            document.querySelector('.tooltip-box2').classList.add('tooltip-box-top');
         }, 5000);
     </script>
     <body
@@ -316,9 +328,9 @@
                                            <img src="/assets/images/svg1.png" style="width:22px;height:22px" />
                                         </span>
                                     </a>
-                                    <div class="tooltip" style="border-radius: 8px; position:absolute; bottom: 0px; max-width: 296px; line-height: 18px; background:#ccc;color:#000;font-size:14px;font-family: Arial, Helvetica, sans-serif;font-weight: 400;padding:8px 12px 8px 12px">
+                                    <div class="tooltip-top" style="border-radius: 8px; position:absolute; top: -8px; transform: translateY(-100%); max-width: 296px; line-height: 18px; background:#ccc;color:#000;font-size:14px;font-family: Arial, Helvetica, sans-serif;font-weight: 400;padding:8px 12px 8px 12px">
                                         <div style="font-size:18px;font-weight: bold;margin-bottom:6px;text-align:center;">Deluthium</div>
-                                        Deluthium is the 1st CeFi-level institutional trading infrastructure powered by a Reinforcement Learning ​​driven dark pool engine with on-chain verifiability.
+                                        Deluthium is the first CeFi-level institutional trading infrastructure powered by a reinforcement learning-driven dark pool engine with on-chain verifiability.
                                     </div>
                                 </div>
                                 <div class="tooltip-box2 max-w-full mb-15 flex justify-center animation-element">
@@ -348,9 +360,9 @@
                                             </svg>
                                         </span>
                                     </a>
-                                    <div class="tooltip" style="border-radius: 8px; position:absolute; bottom: 0px; max-width: 296px; line-height: 18px; background:#ccc;color:#000;font-size:14px;font-family: Arial, Helvetica, sans-serif;font-weight: 400;padding:8px 12px 8px 12px">
+                                    <div class="tooltip-top" style="border-radius: 8px; position:absolute; top: -8px; transform: translateY(-100%); max-width: 296px; width: 244px; line-height: 18px; background:#ccc;color:#000;font-size:14px;font-family: Arial, Helvetica, sans-serif;font-weight: 400;padding:8px 12px 8px 12px">
                                         <div style="font-size:18px;font-weight: bold;margin-bottom:6px;text-align:center;">Delulu</div>
-                                        Delulu is the 1st trading platform powered by Deluthium, which delivers low latency, Cefi-level functionalities, and multi-chain supported user experience.
+                                        Delulu is the first trading platform powered by Deluthium, offering low latency, CeFi-level functionalities, and multi-chain user experience.
                                     </div>
                                 </div>
                             </div>
